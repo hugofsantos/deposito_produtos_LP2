@@ -18,4 +18,9 @@ public class ProdutoDuravel extends Produto{
 	public void setDurabilidade(int durabilidade) {
 		this.durabilidade = durabilidade;
 	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + String.format("%d", this.durabilidade);
+	}
 }

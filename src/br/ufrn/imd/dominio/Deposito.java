@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Deposito {
 	private ArrayList<Produto> produtos;
 	
+	public Deposito() {
+		this.produtos = new ArrayList<Produto>();
+	}
+	
 	public boolean adicionarProduto(Produto produto) {
 		if(produto == null || this.produtos.contains(produto)) return false;
 		
@@ -30,9 +34,9 @@ public class Deposito {
 	public Produto maisCaro() {
 		if(this.estaVazio()) return null;
 		
-		Produto maisCaro = this.produtos.get(0);
+ 		Produto maisCaro = this.produtos.get(0);
 		
-		for(int i = 0; i < this.qntProdutos(); i++) {
+		for(int i = 1; i < this.qntProdutos(); i++) {
 			Produto atual = this.produtos.get(i);
 			
 			if(atual.getPreco() > maisCaro.getPreco()) maisCaro = atual;

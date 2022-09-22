@@ -27,5 +27,5 @@ public class ProdutoNaoDuravel extends Produto{
 
 	public void setGenero(String genero) {
 		this.genero = genero;
-	}	
+	}
 }

@@ -76,4 +76,9 @@ public abstract class Produto {
 		Produto other = (Produto) obj;
 		return codigo == other.codigo;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%d: %s - R$ %.2f", this.codigo, this.nome, this.preco);
+	}
 }
