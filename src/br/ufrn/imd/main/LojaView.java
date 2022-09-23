@@ -37,9 +37,9 @@ public class LojaView {
 		deposito.adicionarProduto(new ProdutoDuravel(3,"Celular", 1200.50, "Xiaomi","Redmi 10", data3, 5));
 		
 		// Produtos não duráveis
-		deposito.adicionarProduto(new ProdutoNaoDuravel(4,"Chocolate", 5, "Garoto","Bombom", data2, data3, ""));
-		deposito.adicionarProduto(new ProdutoNaoDuravel(5,"Toalha", 30, "","", data3, data4, ""));
-		deposito.adicionarProduto(new ProdutoNaoDuravel(6,"Sabonete", 10, "Dove","", data4, data5, ""));
+		deposito.adicionarProduto(new ProdutoNaoDuravel(4,"Chocolate", 5, "Garoto","Bombom", data2, data3, "Alimentício"));
+		deposito.adicionarProduto(new ProdutoNaoDuravel(5,"Toalha", 30, "","", data3, data4, "Higiene Pessoal"));
+		deposito.adicionarProduto(new ProdutoNaoDuravel(6,"Sabonete", 10, "Dove","", data6, data5, "Higiene Pessoal"));
 		
 		System.out.printf("Quantidade de produtos no depósito: %d\n", deposito.qntProdutos());
 		System.out.printf("Depósito vazio: %s\n", (deposito.estaVazio())?"Sim":"Não");
